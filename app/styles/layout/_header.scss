@@ -115,7 +115,7 @@
       margin-left: 10px;
     }
   }
-  @media screen and (max-width: 1023px) {
+  @include maxWidth(1023px) {
     // tablet
     min-height: unset;
     .header-bottom {
@@ -128,7 +128,7 @@
       font-size: 10rem;
     }
   }
-  @media screen and (min-width: 768px) {
+  @include minWidth(768px) {
     &-menu-item:not(:first-child) {
       margin-left: 5rem;
     }
@@ -143,7 +143,7 @@
       border-bottom-color: $secondary-color;
     }
   }
-  @media screen and (max-width: 767px) {
+  @include maxWidth(767px) {
     //mobile
     .header-bottom-text {
       display: none;

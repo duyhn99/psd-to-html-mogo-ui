@@ -1,0 +1,45 @@
+//background color
+@mixin bgc($color: red) {
+  background-color: $color;
+}
+
+//set width, height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+//responsive
+@mixin maxWidth($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin minWidth($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin flexbox(
+  $align: stretch,
+  $justify: flex-start,
+  $direction: row,
+  $flex: flex,
+  $wrap: nowrap
+) {
+  display: $flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin hideScroll() {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -7,3 +7,54 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.block-box {
+  text-align: center;
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+  &-caption {
+    font-family: $third-font;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+  }
+  &-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include size(6.4rem, 4px);
+    @include bgc($primary-color);
+  }
+  &-description {
+    font-size: 1.4rem;
+    font-family: $secondary-font;
+    color: $text-color;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 10rem;
+  }
+  @include maxWidth(767px) {
+    &-caption {
+      font-size: 2rem;
+    }
+    &-title {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    &-description {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
