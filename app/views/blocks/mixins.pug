@@ -20,3 +20,8 @@ mixin aboutItem(src, title, iconClass, alt = "")
     .about-content
       i.about-icon(class=iconClass)
       span.about-title=title
+
+mixin numberItem(count, item)
+  .number-item
+    h4.number-item-count=count
+    span.number-item-text=item
