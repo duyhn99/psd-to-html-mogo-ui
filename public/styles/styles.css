@@ -343,10 +343,22 @@ body {
   transition: all 0.25s linear;
   text-transform: uppercase;
   z-index: 2;
+  text-align: center;
+  padding: 2rem;
 }
 .about-title {
   font-weight: bold;
   font-size: 1.8rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 .about-icon {
   font-size: 2rem;

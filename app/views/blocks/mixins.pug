@@ -13,3 +13,10 @@ mixin blockBox(caption, title, description)
     h2.block-box-title=title
     if description
       p.block-box-description=description
+
+mixin aboutItem(src, title, iconClass, alt = "")
+  .about-item
+    img.about-img(src=src, alt=alt)
+    .about-content
+      i.about-icon(class=iconClass)
+      span.about-title=title

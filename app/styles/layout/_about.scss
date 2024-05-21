@@ -55,10 +55,14 @@
     transition: all 0.25s linear;
     text-transform: uppercase;
     z-index: 2;
+    text-align: center;
+    padding: 2rem;
   }
   &-title {
     font-weight: bold;
     font-size: 1.8rem;
+    line-height: 1.4;
+    @include textClamp();
   }
   &-icon {
     font-size: 2rem;
