@@ -524,3 +524,30 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+.device {
+  padding-top: 1rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url("../images/img-device-bg.png") no-repeat center/cover;
+}
+.device-media {
+  text-align: center;
+}
+.device-image {
+  margin: 0 auto -9.3rem;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .device {
+    padding-top: 5rem;
+  }
+  .device-image {
+    min-width: 80%;
+    margin-bottom: -6rem;
+  }
+}
+@media screen and (max-width: 413px) {
+  .device-image {
+    min-width: 80%;
+    margin-bottom: -5.4rem;
+  }
+}
